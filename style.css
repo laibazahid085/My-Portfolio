@@ -1,0 +1,447 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #1b2c3f;
+    color: #e0e1dd;
+    font-family: inherit;
+}
+
+/*--------------------------------------------------------------- header */
+nav {
+    background-color: #0d1b2a;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: #e0e1dd;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+
+}
+
+.nav-links a {
+    text-decoration: none;
+    padding: 0 10px;
+    color: #e0e1dd;
+    font-size: 1.3rem;
+}
+
+.nav-links a:hover {
+    border-radius: 10px;
+    box-sizing: #778da9;
+    color: #e0e1dd !important;
+    background-color: #778da9;
+    padding: 15px;
+    transition-duration: 0.4s;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* ------------------------------------------------------------------home */
+#element {
+    color: #060707;
+    font-weight: bold;
+}
+
+.banner {
+    background-image: url('img/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+    width: 100%;
+    min-height: 89vh;
+    position: relative;
+}
+
+.text-block {
+    color: #e0e1dd;
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    font-size: 50px;
+}
+
+.text-block h1 {
+    color: #030303;
+    font-size: 6rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+.text-block p {
+    font-size: 3rem;
+    margin: 0.5rem 0;
+}
+
+
+/* --------------------------------------------------------------------about */
+.about-container {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    min-height: 50vh;
+
+}
+
+#about {
+    font-size: 4rem;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.about-box {
+    width: 100%;
+    max-width: 600px;
+    background-color: #e0e1dd;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-box:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 30px rgb(119, 141, 169);
+}
+
+
+.about-box p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* ----------------------------------------------------------------------service */
+.services {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 4rem;
+    margin-bottom: 35px;
+}
+
+.services-intro {
+    font-size: 16px;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.service-card {
+    background-color: #e0e1dd;
+    padding: 25px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgb(119, 141, 169);
+}
+
+.service-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.service-card p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/*--------------------------------------------------------------------- projects */
+
+.projects {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 4rem;
+    margin-bottom: 35px;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background-color: #e0e1dd;
+    border-radius: 15px;
+    padding: 20px;
+    transition: transform 0.4s ease;
+}
+
+.project-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.project-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 12px 28px rgb(119, 141, 169);
+}
+
+/*---------------------------------------------------------------------- contact */
+footer {
+    padding: 40px 20px;
+    background-color: #0d1b2a;
+}
+
+.footer-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-container h2 {
+    font-size: 4rem;
+    margin-bottom: 35px;
+}
+
+.footer-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1.5rem;
+}
+
+.footer-info div {
+    flex: 1 1 200px;
+    margin: 10px 0;
+}
+
+.footer-info a {
+    text-decoration: none;
+    color: #778da9;
+}
+
+.footer-info a:hover {
+    text-decoration: underline;
+}
+
+/* ------------------------------------------------------------------scroll-button */
+
+#myBtn {
+    display: none;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 100;
+    border: none;
+    outline: none;
+    background-color: #778da9;
+    cursor: pointer;
+    padding: 12px;
+    font-size: 20px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+#myBtn:hover {
+    background-color: #96abc5;
+}
+
+
+
+@media (max-width: 700px) {
+
+    /* ------------------------------------------------------------------header */
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 50%;
+        height: 100vh;
+        background-color: #0d1b2a;
+
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    /* ------------------------------------------------------------home */
+    .text-block {
+        width: 90%;
+        top: 35%;
+    }
+
+    .text-block h1 {
+        font-size: 2.5rem;
+    }
+
+    .text-block p {
+        font-size: 1.5rem;
+    }
+
+    .banner {
+        filter: blur(6px);
+        min-height: 60vh;
+    }
+
+    /* ----------------------------------------------------------------about */
+    .about-box {
+        padding: 20px;
+    }
+
+    .about-box h1 {
+        font-size: 3rem;
+    }
+
+    .about-box p {
+        font-size: 15px;
+    }
+
+    /* -------------------------------------------------------------------service */
+    .services h2 {
+        font-size: 3rem;
+    }
+
+    .services-intro {
+        font-size: 15px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+
+    .service-card {
+        padding: 20px;
+    }
+
+    .service-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .service-card p {
+        font-size: 0.95rem;
+    }
+
+    /*--------------------------------------------------------------- projects */
+    .projects-container {
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .project-card {
+        padding: 15px;
+    }
+
+    .project-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .project-card p {
+        font-size: 0.95rem;
+    }
+
+    .project-img {
+        height: 160px;
+    }
+
+    /* -------------------------------------------------------------------------contact */
+    #contact {
+        font-size: 3rem;
+    }
+
+    /*------------------------------------------------------------------------- scroll-button */
+    #myBtn {
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+        font-size: 16px;
+        bottom: 15px;
+        right: 15px;
+    }
+
+}
+
+@media (hover: hover) {
+    .carousel-item:hover .carousel-image {
+        transform: scale(1.05);
+
+    }
+}
