@@ -283,6 +283,11 @@ footer {
 .footer-info a:hover {
     text-decoration: underline;
 }
+.copyright-text{
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
 
 /* ------------------------------------------------------------------scroll-button */
 
@@ -426,6 +431,11 @@ footer {
     #contact {
         font-size: 3rem;
     }
+.copyright-text{
+      font-size: 12px;
+      padding: 5px;
+    
+}
 
     /*------------------------------------------------------------------------- scroll-button */
     #myBtn {
