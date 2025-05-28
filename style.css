@@ -270,11 +270,6 @@ footer {
     font-size: 1.5rem;
 }
 
-.footer-info div {
-    flex: 1 1 200px;
-    margin: 10px 0;
-}
-
 .footer-info a {
     text-decoration: none;
     color: #778da9;
@@ -283,7 +278,8 @@ footer {
 .footer-info a:hover {
     text-decoration: underline;
 }
-.copyright-text{
+
+.copyright-text {
     text-align: center;
     font-size: 14px;
     color: #666;
@@ -431,11 +427,11 @@ footer {
     #contact {
         font-size: 3rem;
     }
-.copyright-text{
-      font-size: 12px;
-      padding: 5px;
-    
-}
+    .copyright-text {
+        font-size: 12px;
+        padding: 5px;
+
+    }
 
     /*------------------------------------------------------------------------- scroll-button */
     #myBtn {
