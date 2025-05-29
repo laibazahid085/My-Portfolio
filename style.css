@@ -10,6 +10,16 @@ body {
     font-family: inherit;
 }
 
+section {
+    scroll-margin-top: 50px;
+}
+
+h2 {
+    font-size: 4rem;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
 /*--------------------------------------------------------------- header */
 nav {
     background-color: #0d1b2a;
@@ -107,18 +117,12 @@ nav {
 
 
 /* --------------------------------------------------------------------about */
-.about-container {
+#about {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     padding: 40px 20px;
     min-height: 50vh;
-
-}
-
-#about {
-    font-size: 4rem;
-    margin-bottom: 25px;
-    text-align: center;
 }
 
 .about-box {
@@ -136,7 +140,6 @@ nav {
     box-shadow: 0 8px 30px rgb(119, 141, 169);
 }
 
-
 .about-box p {
     font-size: 16px;
     color: #555;
@@ -148,11 +151,6 @@ nav {
 .services {
     padding: 60px 20px;
     text-align: center;
-}
-
-.services h2 {
-    font-size: 4rem;
-    margin-bottom: 35px;
 }
 
 .services-intro {
@@ -201,10 +199,6 @@ nav {
     text-align: center;
 }
 
-.section-title {
-    font-size: 4rem;
-    margin-bottom: 35px;
-}
 
 .projects-container {
     display: grid;
@@ -257,11 +251,6 @@ footer {
     text-align: center;
 }
 
-.footer-container h2 {
-    font-size: 4rem;
-    margin-bottom: 35px;
-}
-
 .footer-info {
     display: flex;
     flex-wrap: wrap;
@@ -312,6 +301,13 @@ footer {
 
 
 @media (max-width: 700px) {
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
 
     /* ------------------------------------------------------------------header */
     .menu-toggle {
@@ -363,18 +359,11 @@ footer {
         padding: 20px;
     }
 
-    .about-box h1 {
-        font-size: 3rem;
-    }
-
     .about-box p {
         font-size: 15px;
     }
 
     /* -------------------------------------------------------------------service */
-    .services h2 {
-        font-size: 3rem;
-    }
 
     .services-intro {
         font-size: 15px;
@@ -389,10 +378,6 @@ footer {
         padding: 20px;
     }
 
-    .service-card h3 {
-        font-size: 1.2rem;
-    }
-
     .service-card p {
         font-size: 0.95rem;
     }
@@ -403,16 +388,9 @@ footer {
         padding: 0 10px;
     }
 
-    .section-title {
-        font-size: 2rem;
-    }
 
     .project-card {
         padding: 15px;
-    }
-
-    .project-card h3 {
-        font-size: 1.2rem;
     }
 
     .project-card p {
@@ -424,9 +402,6 @@ footer {
     }
 
     /* -------------------------------------------------------------------------contact */
-    #contact {
-        font-size: 3rem;
-    }
     .copyright-text {
         font-size: 12px;
         padding: 5px;
