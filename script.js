@@ -8,7 +8,7 @@ toggle.addEventListener('click', () => {
         ? '<i class="fas fa-times"></i>'
         : '<i class="fas fa-bars"></i>';
 });
-var typed = new Typed('#element', {
+let typed = new Typed('#element', {
     strings: ['Frontend Developer.'],
     typeSpeed: 100,
 });
