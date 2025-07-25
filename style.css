@@ -238,6 +238,9 @@ nav {
     transform: translateY(-10px) scale(1.02);
     box-shadow: 0 12px 28px rgb(119, 141, 169);
 }
+a{
+    text-decoration: none;
+}
 
 /*---------------------------------------------------------------------- contact */
 footer {
