@@ -127,7 +127,7 @@ nav {
 
 .about-box {
     width: 100%;
-    max-width: 600px;
+    max-width: 1000px;
     background-color: #e0e1dd;
     padding: 30px;
     border-radius: 12px;
@@ -141,10 +141,62 @@ nav {
 }
 
 .about-box p {
-    font-size: 16px;
+    font-size: 20px;
     color: #555;
     line-height: 1.6;
     margin-bottom: 15px;
+}
+/* ---------------------------------------------------------------------- Skills */
+#skill {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.skill-box {
+    background-color: #e0e1dd;
+    padding: 25px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgb(119, 141, 169);
+}
+
+.skill-box h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #222;
+}
+
+.skill-box p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.6;
+}
+.skill-box {
+    background-color: #e0e1dd;
+    padding: 25px;
+    border-radius: 12px;
+
+    opacity: 0;
+    transform: translateY(50px);
+
+    transition: all 0.8s ease;
+}
+
+.skill-box.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* ----------------------------------------------------------------------service */
@@ -172,7 +224,14 @@ nav {
     background-color: #e0e1dd;
     padding: 25px;
     border-radius: 12px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+}
+.service-card.show{
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .service-card:hover {
@@ -243,40 +302,32 @@ a{
 }
 
 /*---------------------------------------------------------------------- contact */
-footer {
-    padding: 40px 20px;
-    background-color: #0d1b2a;
-}
-
-.footer-container {
-    max-width: 900px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.footer-info {
+.contact-form {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    font-size: 1.5rem;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 500px;
+    margin: 20px auto;
 }
 
-.footer-info a {
-    text-decoration: none;
-    color: #778da9;
-}
-
-.footer-info a:hover {
-    text-decoration: underline;
-}
-
-.copyright-text {
-    text-align: center;
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
     font-size: 14px;
-    color: #666;
+    display: block;
 }
 
+.contact-form button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #778da9;
+    color: white;
+    cursor: pointer;
+}
 /* ------------------------------------------------------------------scroll-button */
 
 #myBtn {
@@ -365,7 +416,19 @@ footer {
     .about-box p {
         font-size: 15px;
     }
+/* ---------------------------------------------------------------------- Skills */
+.skills-container {
+    grid-template-columns: 1fr;
+    padding: 0;
+}
 
+.skill-box {
+    padding: 20px;
+}
+
+.skill-box p {
+    font-size: 0.95rem;
+}
     /* -------------------------------------------------------------------service */
 
     .services-intro {
@@ -405,12 +468,28 @@ footer {
     }
 
     /* -------------------------------------------------------------------------contact */
-    .copyright-text {
-        font-size: 12px;
-        padding: 5px;
+    
 
+    .contact-form {
+        width: 90%;
+        margin: 20px auto;
     }
 
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .contact-form button {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    #contact h2 {
+        font-size: 2.2rem;
+        text-align: center;
+    }
     /*------------------------------------------------------------------------- scroll-button */
     #myBtn {
         width: 40px;

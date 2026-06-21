@@ -11,11 +11,10 @@ toggle.addEventListener('click', () => {
 // Typing Animation (Updated)
 let typed = new Typed('#element', {
     strings: [
-        'Backend Developer.',
-        'Node.js Developer.',
-        'Express.js Developer.',
-        'REST API Developer.',
-        'MERN Stack Developer.'
+        "DevOps Engineer",
+        "Cloud & CI/CD Enthusiast",
+        "Linux & Docker Specialist",
+        "Full Stack Developer"
     ],
     typeSpeed: 70,
     backSpeed: 40,
@@ -40,3 +39,24 @@ function topFunction() {
         behavior: 'smooth'
     });
 }
+const cards = document.querySelectorAll('.skill-box, .service-card');
+
+let lastY = 0;
+
+const observer = new IntersectionObserver((entries) => {
+    const currentY = window.scrollY;
+
+    const scrollingDown = currentY > lastY;
+
+    entries.forEach((entry) => {
+        if (entry.isIntersecting && scrollingDown) {
+            entry.target.classList.add('show');
+        }
+    });
+
+    lastY = currentY;
+}, {
+    threshold: 0.15
+});
+
+cards.forEach(card => observer.observe(card));
