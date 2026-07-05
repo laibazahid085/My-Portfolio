@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Laiba Zahid | DevOps Engineer & Full Stack Developer</title>
     <meta name="description" content="Portfolio of Laiba Zahid, a Full Stack Developer and DevOps Engineer skilled in React, Node.js, Linux, Docker, Kubernetes, Jenkins, AWS, Azure, Terraform, and CI/CD pipelines." />
+    <meta name="keywords" content="DevOps, Full Stack Developer, Karachi, Pakistan, React, Node.js, Docker, Kubernetes, CI/CD, Terraform, Cloud Infrastructure" />
+    
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Laiba Zahid | DevOps Engineer & Full Stack Developer" />
+    <meta property="og:description" content="Portfolio of Laiba Zahid, a Full Stack Developer and DevOps Engineer skilled in React, Node.js, Linux, Docker, Kubernetes, Jenkins, AWS, Azure, Terraform, and CI/CD pipelines." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1618401471353-b98aedd07871?q=80&w=1200" />
+
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Laiba Zahid | DevOps Engineer & Full Stack Developer" />
+    <meta property="twitter:description" content="Portfolio of Laiba Zahid, a Full Stack Developer and DevOps Engineer skilled in React, Node.js, Linux, Docker, Kubernetes, Jenkins, AWS, Azure, Terraform, and CI/CD pipelines." />
+    
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,8 +24,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
 </head>
 <body>
+
+    <div id="preloader">
+        <div class="preloader-orbit"></div>
+        <div class="preloader-text">INITIALIZING CORE SERVICES...</div>
+    </div>
+
+    <div id="scrollProgressBar"></div>
+    <div id="mouseGlow"></div>
+    <button id="backToTop" aria-label="Return to System Root"><i class="fas fa-arrow-up"></i></button>
 
     <canvas id="particleCanvas"></canvas>
 
@@ -39,376 +61,365 @@
         </nav>
     </header>
 
- <!-- Hero Matrix Section -->
-    <section id="home" class="hero-section">
-        <div class="hero-content reveal">
-            <div class="hero-tag animate-glow"><span>// DevOps & Full-Stack Architect</span></div>
-            <h1 class="hero-title">Laiba Zahid</h1>
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-content reveal">
+                <div class="hero-tag animate-glow"><span>// DevOps & Full-Stack Architect</span></div>
+                <h1 class="hero-title">Laiba Zahid</h1>
 
-            <div class="hero-typing-wrap">
-                <span>Building </span><span id="element" class="typing-text"></span>
+                <div class="hero-typing-wrap">
+                    <span>Building </span><span id="element" class="typing-text"></span>
+                </div>
+                <p class="hero-lead">Engineering fault-tolerant cloud infrastructures, highly optimized CI/CD automation deployment mechanics, and complete enterprise MERN application lifecycles.</p>
+                <div class="hero-cta-group">
+                    <a href="#projects" class="btn btn-primary-neon">Explore System Architecture</a>
+                    <a href="#contact" class="btn btn-secondary-outline">Initialize Connection</a>
+                </div>
             </div>
-            <p class="hero-lead">Engineering fault-tolerant cloud infrastructures, highly optimized CI/CD automation deployment mechanics, and complete enterprise MERN application lifecycles.</p>
-            <div class="hero-cta-group">
-                <a href="#projects" class="btn btn-primary-neon">Explore System Architecture</a>
-                <a href="#contact" class="btn btn-secondary-outline">Initialize Connection</a>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="about" class="section-container">
-        <div class="section-header reveal">
-            <span class="section-number">01//</span>
-            <h2>System Overview</h2>
-            <div class="header-line"></div>
-        </div>
-        <div class="about-grid">
-            <div class="about-text reveal">
-                <p>Hello! I'm <strong class="highlight-text">Laiba Zahid</strong>, a <strong class="highlight-text">Full Stack Developer and DevOps Engineer</strong> based in Karachi, Pakistan. I specialty-engineer reliable modern web applications and automated environments using microservices infrastructure and cloud patterns.</p>
-                <p>My foundational application design stack includes <em>HTML, CSS, JavaScript, React, Node.js, Express, MongoDB, and SQL</em>. I bridge execution gaps using automated execution layers including <em>Linux, Docker, Kubernetes, Jenkins, GitHub Actions, and GitLab CI/CD</em>.</p>
-                <p>I provision high-availability nodes across cloud topologies including <em>AWS and Azure</em>, mapping storage and system definitions securely via Infrastructure as Code provisions like <em>Terraform and Ansible</em>.</p>
+        <section id="about" class="section-container">
+            <div class="section-header reveal">
+                <span class="section-number">01//</span>
+                <h2>System Overview</h2>
+                <div class="header-line"></div>
             </div>
-        </div>
-    </section>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p>Hello! I'm <strong class="highlight-text">Laiba Zahid</strong>, a <strong class="highlight-text">Full Stack Developer and DevOps Engineer</strong> based in Karachi, Pakistan. I specialty-engineer reliable modern web applications and automated environments using microservices infrastructure and cloud patterns.</p>
+                    <p>My foundational application design stack includes <em>HTML, CSS, JavaScript, React, Node.js, Express, MongoDB, and SQL</em>. I bridge execution gaps using automated execution layers including <em>Linux, Docker, Kubernetes, Jenkins, GitHub Actions, and GitLab CI/CD</em>.</p>
+                    <p>I provision high-availability nodes across cloud topologies including <em>AWS and Azure</em>, mapping storage and system definitions securely via Infrastructure as Code provisions like <em>Terraform and Ansible</em>.</p>
+                </div>
+            </div>
+        </section>
 
-    <section id="skill" class="section-container">
-        <div class="section-header reveal">
-            <span class="section-number">02//</span>
-            <h2>Core Competencies</h2>
-            <div class="header-line"></div>
-        </div>
-        <div class="skills-grid">
-            <div class="skill-card reveal">
-                <div class="skill-icon-box"><i class="fab fa-aws"></i></div>
-                <h3>Cloud Infrastructures</h3>
-                <p>AWS ecosystem (EC2, S3, IAM profiles), Microsoft Azure cluster mapping, hybrid-cloud deployment models.</p>
+        <section id="skill" class="section-container">
+            <div class="section-header reveal">
+                <span class="section-number">02//</span>
+                <h2>Core Competencies</h2>
+                <div class="header-line"></div>
             </div>
-            <div class="skill-card reveal">
-                <div class="skill-icon-box"><i class="fas fa-infinity"></i></div>
-                <h3>DevOps Pipelines</h3>
-                <p>Multi-stage Jenkins automation setups, robust GitHub Actions configurations, comprehensive continuous delivery operations.</p>
+            <div class="skills-grid">
+                <div class="skill-card reveal">
+                    <div class="skill-icon-box"><i class="fab fa-aws"></i></div>
+                    <h3>Cloud Infrastructures</h3>
+                    <p>AWS ecosystem (EC2, S3, IAM profiles), Microsoft Azure cluster mapping, hybrid-cloud deployment models.</p>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon-box"><i class="fas fa-infinity"></i></div>
+                    <h3>DevOps Pipelines</h3>
+                    <p>Multi-stage Jenkins automation setups, robust GitHub Actions configurations, comprehensive continuous delivery operations.</p>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon-box"><i class="fab fa-docker"></i></div>
+                    <h3>Container Orchestration</h3>
+                    <p>Microservice image composition with Docker, scalable load-balanced network environments via Kubernetes (K8s).</p>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon-box"><i class="fas fa-terminal"></i></div>
+                    <h3>Infrastructure as Code</h3>
+                    <p>Declarative workspace initialization utilizing Terraform structures, enterprise layout playbooks using Ansible.</p>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon-box"><i class="fas fa-server"></i></div>
+                    <h3>SysAdmin & Routing</h3>
+                    <p>Linux server operations, access permissions auditing, firewalls policies management, reverse proxy setups with Nginx.</p>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon-box"><i class="fab fa-git-alt"></i></div>
+                    <h3>Version Operations</h3>
+                    <p>Advanced Git operations, branching strategy management, continuous integration workflow structures.</p>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon-box"><i class="fas fa-code"></i></div>
+                    <h3>Scripting & Logic</h3>
+                    <p>System automation scripts written with Bash, parsing telemetry reports, scheduled tasks scheduling execution loops.</p>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon-box"><i class="fab fa-react"></i></div>
+                    <h3>Frontend Engineering</h3>
+                    <p>High-speed functional interfaces with HTML5, CSS3, modern ECMAScript (ES6), and scalable React components.</p>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon-box"><i class="fab fa-node-js"></i></div>
+                    <h3>Backend Infrastructure</h3>
+                    <p>High-throughput secure data APIs via Node.js architectures, Express middleware routing, and robust auth models.</p>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon-box"><i class="fas fa-database"></i></div>
+                    <h3>Database Management</h3>
+                    <p>Document models via MongoDB, structured database normalization models, and query speed optimization workflows.</p>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon-box"><i class="fas fa-chart-line"></i></div>
+                    <h3>System Telemetry</h3>
+                    <p>Continuous process execution metrics tracking, logging tables collection parsing, and error resolution cycles.</p>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon-box"><i class="fas fa-tasks"></i></div>
+                    <h3>Agile Architectures</h3>
+                    <p>Continuous feature delivery paradigms, software version management, API contract validation patterns.</p>
+                </div>
             </div>
-            <div class="skill-card reveal">
-                <div class="skill-icon-box"><i class="fab fa-docker"></i></div>
-                <h3>Container Orchestration</h3>
-                <p>Microservice image composition with Docker, scalable load-balanced network environments via Kubernetes (K8s).</p>
-            </div>
-            <div class="skill-card reveal">
-                <div class="skill-icon-box"><i class="fas fa-terminal"></i></div>
-                <h3>Infrastructure as Code</h3>
-                <p>Declarative workspace initialization utilizing Terraform structures, enterprise layout playbooks using Ansible.</p>
-            </div>
-            <div class="skill-card reveal">
-                <div class="skill-icon-box"><i class="fas fa-server"></i></div>
-                <h3>SysAdmin & Routing</h3>
-                <p>Linux server operations, access permissions auditing, firewalls policies management, reverse proxy setups with Nginx.</p>
-            </div>
-            <div class="skill-card reveal">
-                <div class="skill-icon-box"><i class="fab fa-git-alt"></i></div>
-                <h3>Version Operations</h3>
-                <p>Advanced Git operations, branching strategy management, continuous integration workflow structures.</p>
-            </div>
-            <div class="skill-card reveal">
-                <div class="skill-icon-box"><i class="fas fa-code"></i></div>
-                <h3>Scripting & Logic</h3>
-                <p>System automation scripts written with Bash, parsing telemetry reports, scheduled tasks scheduling execution loops.</p>
-            </div>
-            <div class="skill-card reveal">
-                <div class="skill-icon-box"><i class="fab fa-react"></i></div>
-                <h3>Frontend Engineering</h3>
-                <p>High-speed functional interfaces with HTML5, CSS3, modern ECMAScript (ES6), and scalable React components.</p>
-            </div>
-            <div class="skill-card reveal">
-                <div class="skill-icon-box"><i class="fab fa-node-js"></i></div>
-                <h3>Backend Infrastructure</h3>
-                <p>High-throughput secure data APIs via Node.js architectures, Express middleware routing, and robust auth models.</p>
-            </div>
-            <div class="skill-card reveal">
-                <div class="skill-icon-box"><i class="fas fa-database"></i></div>
-                <h3>Database Management</h3>
-                <p>Document models via MongoDB, structured database normalization models, and query speed optimization workflows.</p>
-            </div>
-            <div class="skill-card reveal">
-                <div class="skill-icon-box"><i class="fas fa-chart-line"></i></div>
-                <h3>System Telemetry</h3>
-                <p>Continuous process execution metrics tracking, logging tables collection parsing, and error resolution cycles.</p>
-            </div>
-            <div class="skill-card reveal">
-                <div class="skill-icon-box"><i class="fas fa-tasks"></i></div>
-                <h3>Agile Architectures</h3>
-                <p>Continuous feature delivery paradigms, software version management, API contract validation patterns.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="experience" class="section-container">
-        <div class="section-header reveal">
-            <span class="section-number">03//</span>
-            <h2>Deployment History</h2>
-            <div class="header-line"></div>
-        </div>
-        <div class="timeline">
-            <div class="timeline-item reveal">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">Mar 2026 - Jun 2026</div>
-                <div class="timeline-content">
-                    <div class="timeline-role-row">
-                        <h3>DevOps Intern</h3>
-                        <span class="company-tag">Rhombix Technologies</span>
+        <section id="experience" class="section-container">
+            <div class="section-header reveal">
+                <span class="section-number">03//</span>
+                <h2>Deployment History</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Mar 2026 - Jun 2026</div>
+                    <div class="timeline-content">
+                        <div class="timeline-role-row">
+                            <h3>DevOps Intern</h3>
+                            <span class="company-tag">Rhombix Technologies</span>
+                        </div>
+                        <div class="timeline-meta">
+                            <span><i class="fas fa-briefcase"></i> Internship</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Remote Workspace</span>
+                        </div>
+                        <ul class="timeline-bullets">
+                            <li>Completed a hands-on DevOps framework execution track gaining system exposure to <strong>Linux, Git & GitHub, Jenkins, Docker, Kubernetes, Terraform, Prometheus, and Grafana</strong>.</li>
+                            <li>Configured automated modern multi-stage <strong>CI/CD delivery mechanics</strong> alongside production-level image composition containers and declarations.</li>
+                            <li>Built performance metrics stacks deploying monitoring targets to optimize infrastructure runtimes and alert thresholds.</li>
+                        </ul>
                     </div>
-                    <div class="timeline-meta">
-                        <span><i class="fas fa-briefcase"></i> Internship</span>
-                        <span><i class="fas fa-map-marker-alt"></i> Remote Workspace</span>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Jun 2025 - Aug 2025</div>
+                    <div class="timeline-content">
+                        <div class="timeline-role-row">
+                            <h3>MERN Stack Intern</h3>
+                            <span class="company-tag">10Pearls Pakistan</span>
+                        </div>
+                        <div class="timeline-meta">
+                            <span><i class="fas fa-briefcase"></i> Internship</span>
+                            <span><i class="fas fa-cloud"></i> Remote Workspace</span>
+                        </div>
+                        <ul class="timeline-bullets">
+                            <li>Engineered a fully functional multi-user secure Notes Application from scratch leveraging structured <strong>React layers, Node runtimes, Express routers, and MongoDB backend storage</strong>.</li>
+                            <li>Integrated signed payload user authentication flows (Login/Signup) paired securely alongside private path rendering and comprehensive database CRUD routes.</li>
+                            <li>Collaborated inside a professional Git team deployment pattern, resolving feature conflicts, submitting version controls, and executing architectural code reviews.</li>
+                        </ul>
                     </div>
-                    <ul class="timeline-bullets">
-                        <li>Completed a hands-on DevOps framework execution track gaining system exposure to <strong>Linux, Git & GitHub, Jenkins, Docker, Kubernetes, Terraform, Prometheus, and Grafana</strong>.</li>
-                        <li>Configured automated modern multi-stage <strong>CI/CD delivery mechanics</strong> alongside production-level image composition containers and declarations.</li>
-                        <li>Built performance metrics stacks deploying monitoring targets to optimize infrastructure runtimes and alert thresholds.</li>
-                    </ul>
                 </div>
             </div>
+        </section>
 
-            <div class="timeline-item reveal">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">Jun 2025 - Aug 2025</div>
-                <div class="timeline-content">
-                    <div class="timeline-role-row">
-                        <h3>MERN Stack Intern</h3>
-                        <span class="company-tag">10Pearls Pakistan</span>
+        <section id="services" class="section-container">
+            <div class="section-header reveal">
+                <span class="section-number">04//</span>
+                <h2>Operational Solutions</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-number">01</div>
+                    <h3>CI/CD Implementation</h3>
+                    <p>Designing dynamic, automated pipelines via Jenkins and GitHub Actions that perform real-time verification testing and execution updates.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-number">02</div>
+                    <h3>Ecosystem Containerization</h3>
+                    <p>Wrapping distributed monolithic legacy application elements into secure, fast isolated lightweight Docker containers.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-number">03</div>
+                    <h3>Cluster Orchestration</h3>
+                    <p>Configuring highly available Kubernetes systems with automated traffic routing rules and high-availability setups.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-number">04</div>
+                    <h3>Cloud Provisioning</h3>
+                    <p>Architecting remote data instances and logic engines natively within AWS and Microsoft Azure platforms.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-number">05</div>
+                    <h3>Automated Architectures</h3>
+                    <p>Structuring zero-human-error infrastructure code blocks with Terraform alongside remote configuration provisioning via Ansible.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-number">06</div>
+                    <h3>Linux Environment Tuning</h3>
+                    <p>System resource tables configuration, tracking platform security parameters, and securing critical deployment runtimes.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-number">07</div>
+                    <h3>Proxy & Route Setup</h3>
+                    <p>Setting reverse gateways, managing name resolution layers, handling network interface firewalls, and managing SSL keys.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-number">08</div>
+                    <h3>Full Stack Software</h3>
+                    <p>Building secure, user-facing applications using React frameworks wired up to robust database processing clusters.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-number">09</div>
+                    <h3>Data Design Optimization</h3>
+                    <p>Mapping database collections, writing schema interfaces, and structuring complex database transactions.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section-container">
+            <div class="section-header reveal">
+                <span class="section-number">05//</span>
+                <h2>Architectures Built</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card reveal">
+                    <div class="project-img-container">
+                        <img src="img/ci-cd.jpg" alt="CI/CD Project" onerror="this.src='https://images.unsplash.com/photo-1618401471353-b98aedd07871?q=80&w=600&auto=format&fit=crop'">
+                        <div class="project-overlay"><i class="fas fa-terminal"></i></div>
                     </div>
-                    <div class="timeline-meta">
-                        <span><i class="fas fa-briefcase"></i> Internship</span>
-                        <span><i class="fas fa-cloud"></i> Remote Workspace</span>
+                    <div class="project-details">
+                        <h3>CI/CD Pipeline Automation</h3>
+                        <p>Automated pipeline configurations leveraging Jenkins core routines and continuous verification cycles via GitHub Actions hooks.</p>
+                        <div class="project-tags"><span>Jenkins</span><span>GitHub Actions</span><span>CI/CD</span></div>
+                        </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-img-container">
+                        <img src="img/docker.jpg" alt="Docker Project" onerror="this.src='https://images.unsplash.com/photo-1607799279861-4dd421887fb3?q=80&w=600&auto=format&fit=crop'">
+                        <div class="project-overlay"><i class="fab fa-docker"></i></div>
                     </div>
-                    <ul class="timeline-bullets">
-                        <li>Engineered a fully functional multi-user secure Notes Application from scratch leveraging structured <strong>React layers, Node runtimes, Express routers, and MongoDB backend storage</strong>.</li>
-                        <li>Integrated signed payload user authentication flows (Login/Signup) paired securely alongside private path rendering and comprehensive database CRUD routes.</li>
-                        <li>Collaborated inside a professional Git team deployment pattern, resolving feature conflicts, submitting version controls, and executing architectural code reviews.</li>
-                    </ul>
+                    <div class="project-details">
+                        <h3>Dockerized Application</h3>
+                        <p>Containerizing microservices patterns to enforce target operational profiles cleanly across multiple host system layouts.</p>
+                        <div class="project-tags"><span>Docker</span><span>Compose</span><span>Microservices</span></div>
+                        </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="services" class="section-container">
-        <div class="section-header reveal">
-            <span class="section-number">04//</span>
-            <h2>Operational Solutions</h2>
-            <div class="header-line"></div>
-        </div>
-        <div class="services-grid">
-            <div class="service-card reveal">
-                <div class="service-number">01</div>
-                <h3>CI/CD Implementation</h3>
-                <p>Designing dynamic, automated pipelines via Jenkins and GitHub Actions that perform real-time verification testing and execution updates.</p>
-            </div>
-            <div class="service-card reveal">
-                <div class="service-number">02</div>
-                <h3>Ecosystem Containerization</h3>
-                <p>Wrapping distributed monolithic legacy application elements into secure, fast isolated lightweight Docker containers.</p>
-            </div>
-            <div class="service-card reveal">
-                <div class="service-number">03</div>
-                <h3>Cluster Orchestration</h3>
-                <p>Configuring highly available Kubernetes systems with automated traffic routing rules and high-availability setups.</p>
-            </div>
-            <div class="service-card reveal">
-                <div class="service-number">04</div>
-                <h3>Cloud Provisioning</h3>
-                <p>Architecting remote data instances and logic engines natively within AWS and Microsoft Azure platforms.</p>
-            </div>
-            <div class="service-card reveal">
-                <div class="service-number">05</div>
-                <h3>Automated Architectures</h3>
-                <p>Structuring zero-human-error infrastructure code blocks with Terraform alongside remote configuration provisioning via Ansible.</p>
-            </div>
-            <div class="service-card reveal">
-                <div class="service-number">06</div>
-                <h3>Linux Environment Tuning</h3>
-                <p>System resource tables configuration, tracking platform security parameters, and securing critical deployment runtimes.</p>
-            </div>
-            <div class="service-card reveal">
-                <div class="service-number">07</div>
-                <h3>Proxy & Route Setup</h3>
-                <p>Setting reverse gateways, managing name resolution layers, handling network interface firewalls, and managing SSL keys.</p>
-            </div>
-            <div class="service-card reveal">
-                <div class="service-number">08</div>
-                <h3>Full Stack Software</h3>
-                <p>Building secure, user-facing applications using React frameworks wired up to robust database processing clusters.</p>
-            </div>
-            <div class="service-card reveal">
-                <div class="service-number">09</div>
-                <h3>Data Design Optimization</h3>
-                <p>Mapping database collections, writing schema interfaces, and structuring complex database transactions.</p>
-            </div>
-        </div>
-    </section>
+                <div class="project-card reveal">
+                    <div class="project-img-container">
+                        <img src="img/kubernetes.jpg" alt="Kubernetes Project" onerror="this.src='https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?q=80&w=600&auto=format&fit=crop'">
+                        <div class="project-overlay"><i class="fas fa-network-wired"></i></div>
+                    </div>
+                    <div class="project-details">
+                        <h3>Kubernetes Deployment</h3>
+                        <p>Mapping declarative state schemas into high-availability clusters ensuring zero-downtime rolling upgrades.</p>
+                        <div class="project-tags"><span>Kubernetes</span><span>K8s</span><span>Clusters</span></div>
+                        </div>
+                </div>
 
-    <section id="projects" class="section-container">
-        <div class="section-header reveal">
-            <span class="section-number">05//</span>
-            <h2>Architectures Built</h2>
-            <div class="header-line"></div>
-        </div>
-        <div class="projects-grid">
-            <div class="project-card reveal">
-                <div class="project-img-container">
-                    <img src="img/ci-cd.jpg" alt="CI/CD Project" onerror="this.src='https://images.unsplash.com/photo-1618401471353-b98aedd07871?q=80&w=600&auto=format&fit=crop'">
-                    <div class="project-overlay"><i class="fas fa-terminal"></i></div>
+                <div class="project-card reveal">
+                    <div class="project-img-container">
+                        <img src="img/bash.jpg" alt="Bash Automation" onerror="this.src='https://images.unsplash.com/photo-1629654297299-c8506221ca97?q=80&w=600&auto=format&fit=crop'">
+                        <div class="project-overlay"><i class="fas fa-file-code"></i></div>
+                    </div>
+                    <div class="project-details">
+                        <h3>Bash Scripting Automation</h3>
+                        <p>Developing shell scripts for automatic storage lifecycle cleanup operations, system log generation, and remote node monitoring.</p>
+                        <div class="project-tags"><span>Bash</span><span>Linux Shell</span><span>Automation</span></div>
+                        </div>
                 </div>
-                <div class="project-details">
-                    <h3>CI/CD Pipeline Automation</h3>
-                    <p>Automated pipeline configurations leveraging Jenkins core routines and continuous verification cycles via GitHub Actions hooks.</p>
-                    <div class="project-tags"><span>Jenkins</span><span>GitHub Actions</span><span>CI/CD</span></div>
-                    <a href="#" target="_blank" class="project-action-link">Verify Architecture <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
 
-            <div class="project-card reveal">
-                <div class="project-img-container">
-                    <img src="img/docker.jpg" alt="Docker Project" onerror="this.src='https://images.unsplash.com/photo-1607799279861-4dd421887fb3?q=80&w=600&auto=format&fit=crop'">
-                    <div class="project-overlay"><i class="fab fa-docker"></i></div>
+                <div class="project-card reveal">
+                    <div class="project-img-container">
+                        <img src="img/linux-monitor.jpg" alt="Linux Monitoring" onerror="this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=600&auto=format&fit=crop'">
+                        <div class="project-overlay"><i class="fas fa-chart-bar"></i></div>
+                    </div>
+                    <div class="project-details">
+                        <h3>Linux Server Monitoring & Alerts</h3>
+                        <p>Building daemon processing loops tracking memory boundaries and issuing immediate communications flags upon threshold violations.</p>
+                        <div class="project-tags"><span>SysLog</span><span>Telemetry</span><span>Bash Scripts</span></div>
+                        </div>
                 </div>
-                <div class="project-details">
-                    <h3>Dockerized Application</h3>
-                    <p>Containerizing microservices patterns to enforce target operational profiles cleanly across multiple host system layouts.</p>
-                    <div class="project-tags"><span>Docker</span><span>Compose</span><span>Microservices</span></div>
-                    <a href="#" target="_blank" class="project-action-link">Verify Architecture <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
 
-            <div class="project-card reveal">
-                <div class="project-img-container">
-                    <img src="img/kubernetes.jpg" alt="Kubernetes Project" onerror="this.src='https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?q=80&w=600&auto=format&fit=crop'">
-                    <div class="project-overlay"><i class="fas fa-network-wired"></i></div>
+                <div class="project-card reveal">
+                    <div class="project-img-container">
+                        <img src="img/git-workflow.jpg" alt="Git Workflow" onerror="this.src='https://images.unsplash.com/photo-1556075798-482a21675391?q=80&w=600&auto=format&fit=crop'">
+                        <div class="project-overlay"><i class="fas fa-code-fork"></i></div>
+                    </div>
+                    <div class="project-details">
+                        <h3>Git Workflow Design</h3>
+                        <p>Standardizing modern branching mechanisms using automated webhooks checking integration states dynamically before pipeline deployment.</p>
+                        <div class="project-tags"><span>Git</span><span>Git Hooks</span><span>DevOps</span></div>
+                        </div>
                 </div>
-                <div class="project-details">
-                    <h3>Kubernetes Deployment</h3>
-                    <p>Mapping declarative state schemas into high-availability clusters ensuring zero-downtime rolling upgrades.</p>
-                    <div class="project-tags"><span>Kubernetes</span><span>K8s</span><span>Clusters</span></div>
-                    <a href="#" target="_blank" class="project-action-link">Verify Architecture <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
 
-            <div class="project-card reveal">
-                <div class="project-img-container">
-                    <img src="img/bash.jpg" alt="Bash Automation" onerror="this.src='https://images.unsplash.com/photo-1629654297299-c8506221ca97?q=80&w=600&auto=format&fit=crop'">
-                    <div class="project-overlay"><i class="fas fa-file-code"></i></div>
+                <div class="project-card reveal">
+                    <div class="project-img-container">
+                        <img src="img/terraform.jpg" alt="Terraform Project" onerror="this.src='https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=600&auto=format&fit=crop'">
+                        <div class="project-overlay"><i class="fas fa-cloud-upload-alt"></i></div>
+                    </div>
+                    <div class="project-details">
+                        <h3>IaC Architecture Provisioning</h3>
+                        <p>Automating complete multi-tier network instances setup safely over cloud architectures using structured Terraform states.</p>
+                        <div class="project-tags"><span>Terraform</span><span>Ansible</span><span>IaC</span></div>
+                        </div>
                 </div>
-                <div class="project-details">
-                    <h3>Bash Scripting Automation</h3>
-                    <p>Developing shell scripts for automatic storage lifecycle cleanup operations, system log generation, and remote node monitoring.</p>
-                    <div class="project-tags"><span>Bash</span><span>Linux Shell</span><span>Automation</span></div>
-                    <a href="#" target="_blank" class="project-action-link">Verify Architecture <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
 
-            <div class="project-card reveal">
-                <div class="project-img-container">
-                    <img src="img/linux-monitor.jpg" alt="Linux Monitoring" onerror="this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=600&auto=format&fit=crop'">
-                    <div class="project-overlay"><i class="fas fa-chart-bar"></i></div>
+                <div class="project-card reveal">
+                    <div class="project-img-container">
+                        <img src="img/linux.jpg" alt="Linux Management" onerror="this.src='https://images.unsplash.com/photo-1600132806370-bf17e65e942f?q=80&w=600&auto=format&fit=crop'">
+                        <div class="project-overlay"><i class="fas fa-hdd"></i></div>
+                    </div>
+                    <div class="project-details">
+                        <h3>Linux Server Operations</h3>
+                        <p>Setting up baseline server instances, updating key configuration matrices, and locking down ports against vector vulnerabilities.</p>
+                        <div class="project-tags"><span>Linux</span><span>Security</span><span>Server Setup</span></div>
+                   </div>
                 </div>
-                <div class="project-details">
-                    <h3>Linux Server Monitoring & Alerts</h3>
-                    <p>Building daemon processing loops tracking memory boundaries and issuing immediate communications flags upon threshold violations.</p>
-                    <div class="project-tags"><span>SysLog</span><span>Telemetry</span><span>Bash Scripts</span></div>
-                    <a href="#" target="_blank" class="project-action-link">Verify Architecture <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
 
-            <div class="project-card reveal">
-                <div class="project-img-container">
-                    <img src="img/git-workflow.jpg" alt="Git Workflow" onerror="this.src='https://images.unsplash.com/photo-1556075798-482a21675391?q=80&w=600&auto=format&fit=crop'">
-                    <div class="project-overlay"><i class="fas fa-code-fork"></i></div>
+                <div class="project-card reveal">
+                    <div class="project-img-container">
+                        <img src="img/notes-app.jpg.png" alt="MERN Project" onerror="this.src='https://images.unsplash.com/photo-1517842645767-c639042777db?q=80&w=600&auto=format&fit=crop'">
+                        <div class="project-overlay"><i class="fab fa-react font-accent"></i></div>
+                    </div>
+                    <div class="project-details">
+                        <h3>MERN Notes Application</h3>
+                        <p>Full stack multi-user data workspace engineered using granular application controls during 10Pearls internship cycle.</p>
+                        <div class="project-tags"><span>React</span><span>Node.js</span><span>MongoDB</span></div>
+                        </div>
                 </div>
-                <div class="project-details">
-                    <h3>Git Workflow Design</h3>
-                    <p>Standardizing modern branching mechanisms using automated webhooks checking integration states dynamically before pipeline deployment.</p>
-                    <div class="project-tags"><span>Git</span><span>Git Hooks</span><span>DevOps</span></div>
-                    <a href="#" target="_blank" class="project-action-link">Verify Architecture <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
 
-            <div class="project-card reveal">
-                <div class="project-img-container">
-                    <img src="img/terraform.jpg" alt="Terraform Project" onerror="this.src='https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=600&auto=format&fit=crop'">
-                    <div class="project-overlay"><i class="fas fa-cloud-upload-alt"></i></div>
+                <div class="project-card reveal">
+                    <div class="project-img-container">
+                        <img src="img/api.jpg" alt="REST API Project" onerror="this.src='https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=600&auto=format&fit=crop'">
+                        <div class="project-overlay"><i class="fas fa-key"></i></div>
+                    </div>
+                    <div class="project-details">
+                        <h3>Secure REST API Development</h3>
+                        <p>Building modern database routers serving signed authorization objects with zero token leakage vulnerabilities.</p>
+                        <div class="project-tags"><span>Express</span><span>JWT</span><span>API Sec</span></div>
+                        </div>
                 </div>
-                <div class="project-details">
-                    <h3>IaC Architecture Provisioning</h3>
-                    <p>Automating complete multi-tier network instances setup safely over cloud architectures using structured Terraform states.</p>
-                    <div class="project-tags"><span>Terraform</span><span>Ansible</span><span>IaC</span></div>
-                    <a href="#" target="_blank" class="project-action-link">Verify Architecture <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
 
-            <div class="project-card reveal">
-                <div class="project-img-container">
-                    <img src="img/linux.jpg" alt="Linux Management" onerror="this.src='https://images.unsplash.com/photo-1600132806370-bf17e65e942f?q=80&w=600&auto=format&fit=crop'">
-                    <div class="project-overlay"><i class="fas fa-hdd"></i></div>
+                <div class="project-card reveal">
+                    <div class="project-img-container">
+                        <img src="img/weather.jpg" alt="Weather Portal" onerror="this.src='https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?q=80&w=600&auto=format&fit=crop'">
+                        <div class="project-overlay"><i class="fas fa-cloud-sun"></i></div>
+                    </div>
+                    <div class="project-details">
+                        <h3>Atmospheric Telemetry Site</h3>
+                        <p>Real-time location data client polling remote atmospheric weather systems via async promises processing structures.</p>
+                        <div class="project-tags"><span>JavaScript</span><span>REST Polling</span><span>Vercel</span></div>
+                      </div>
                 </div>
-                <div class="project-details">
-                    <h3>Linux Server Operations</h3>
-                    <p>Setting up baseline server instances, updating key configuration matrices, and locking down ports against vector vulnerabilities.</p>
-                    <div class="project-tags"><span>Linux</span><span>Security</span><span>Server Setup</span></div>
-                    <a href="#" target="_blank" class="project-action-link">Verify Architecture <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
 
-            <div class="project-card reveal">
-                <div class="project-img-container">
-                    <img src="img/notes-app.jpg.png" alt="MERN Project" onerror="this.src='https://images.unsplash.com/photo-1517842645767-c639042777db?q=80&w=600&auto=format&fit=crop'">
-                    <div class="project-overlay"><i class="fab fa-react font-accent"></i></div>
-                </div>
-                <div class="project-details">
-                    <h3>MERN Notes Application</h3>
-                    <p>Full stack multi-user data workspace engineered using granular application controls during 10Pearls internship cycle.</p>
-                    <div class="project-tags"><span>React</span><span>Node.js</span><span>MongoDB</span></div>
-                    <a href="#" target="_blank" class="project-action-link">Verify Architecture <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-            <div class="project-card reveal">
-                <div class="project-img-container">
-                    <img src="img/api.jpg" alt="REST API Project" onerror="this.src='https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=600&auto=format&fit=crop'">
-                    <div class="project-overlay"><i class="fas fa-key"></i></div>
-                </div>
-                <div class="project-details">
-                    <h3>Secure REST API Development</h3>
-                    <p>Building modern database routers serving signed authorization objects with zero token leakage vulnerabilities.</p>
-                    <div class="project-tags"><span>Express</span><span>JWT</span><span>API Sec</span></div>
-                    <a href="#" target="_blank" class="project-action-link">Verify Architecture <i class="fas fa-arrow-right"></i></a>
+                <div class="project-card reveal">
+                    <div class="project-img-container">
+                        <img src="img/kababjees.png" alt="Bakery Website" onerror="this.src='https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=600&auto=format&fit=crop'">
+                        <div class="project-overlay"><i class="fas fa-shopping-cart"></i></div>
+                    </div>
+                    <div class="project-details">
+                        <h3>Bakery Platform UI</h3>
+                        <p>Highly dynamic, fully interactive user interface execution modeled collaboratively optimizing frontend caching states.</p>
+                        <div class="project-tags"><span>Team Project</span><span>UI/UX</span><span>Optimization</span></div>
+                     </div>
                 </div>
             </div>
-
-            <div class="project-card reveal">
-                <div class="project-img-container">
-                    <img src="img/weather.jpg" alt="Weather Portal" onerror="this.src='https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?q=80&w=600&auto=format&fit=crop'">
-                    <div class="project-overlay"><i class="fas fa-cloud-sun"></i></div>
-                </div>
-                <div class="project-details">
-                    <h3>Atmospheric Telemetry Site</h3>
-                    <p>Real-time location data client polling remote atmospheric weather systems via async promises processing structures.</p>
-                    <div class="project-tags"><span>JavaScript</span><span>REST Polling</span><span>Vercel</span></div>
-                    <a href="https://weather-app-chi-pied-11.vercel.app/" target="_blank" class="project-action-link">Verify Architecture <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-            <div class="project-card reveal">
-                <div class="project-img-container">
-                    <img src="img/kababjees.png" alt="Bakery Website" onerror="this.src='https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=600&auto=format&fit=crop'">
-                    <div class="project-overlay"><i class="fas fa-shopping-cart"></i></div>
-                </div>
-                <div class="project-details">
-                    <h3>Bakery Platform UI</h3>
-                    <p>Highly dynamic, fully interactive user interface execution modeled collaboratively optimizing frontend caching states.</p>
-                    <div class="project-tags"><span>Team Project</span><span>UI/UX</span><span>Optimization</span></div>
-                    <a href="https://kababjees-bakaers.vercel.app/" target="_blank" class="project-action-link">Verify Architecture <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer id="contact">
         <div class="footer-container">
@@ -441,11 +452,12 @@
             </form>
 
             <div class="social-links reveal">
-                <a href="#" target="_blank" aria-label="GitHub Hub Source"><i class="fab fa-github"></i></a>
-                <a href="#" target="_blank" aria-label="LinkedIn Professional Matrix"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/dashboard" target="_blank" aria-label="GitHub Hub Source"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/feed/" target="_blank" aria-label="LinkedIn Professional Matrix"><i class="fab fa-linkedin-in"></i></a>
                 <a href="mailto:laibazahid085@gmail.com" aria-label="Direct SMTP Terminal Link"><i class="fas fa-envelope"></i></a>
             </div>
-             <div class="hero-meta-data">
+
+            <div class="hero-meta-data">
                 <div class="hero-meta-item">
                     <i class="fas fa-phone-alt"></i> <span>+92 317 8156897</span>
                 </div>
@@ -453,19 +465,13 @@
                     <i class="fas fa-map-marker-alt"></i> <span>Karachi, Pakistan</span>
                 </div>
             </div>
-
-            <p class="copyright-text reveal">
+<hr>
+            <p class="copyright-text">
                 &copy; 2026 Laiba Zahid | Fully Automated Distribution. All rights reserved.
             </p>
         </div>
     </footer>
 
-    <button onclick="topFunction()" id="myBtn" title="Return to Top Layer View">
-        <i class="fa fa-arrow-up" aria-hidden="true"></i>
-    </button>
-
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
